@@ -8,7 +8,7 @@ $(document).ready(function(){
 	$('#add-button').click(function(){
 		var item = $('#shopping-item').val();
 		console.log('Add new item: '+item);
-		$('#shopping-item-list tbody').append('<tr><td>new</td><td>bread</td><td>1</td><td>Trader Joe</td></tr>');
+		$('#shopping-item-list tbody').append('<tr><td><i class="fa fa-square-o"></i></td><td>bread</td><td>1</td><td>Trader Joe</td></tr>');
 	})
 
 	// remove item from the list
