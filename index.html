@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Marius's Shopping List</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+	<section class="header-section">
+		<div class="content">
+			<h1>Marius's Shopping List</h1>
+		</div>
+	</section>
+
+	<section class="menu-section">
+		<div class="content">
+			<span>Item</span>
+			<input id="shopping-item" name="shopping-item" type="text"/>
+
+			<span>Quantity</span>
+			<input id="shopping-item-qty" name="shopping-item-qty" type="number" value="1" min="1"/>
+
+			<span>Store</span>
+			<select id="shopping-store">
+				<option value="" disabled selected>select store</option>
+				<option value="publix">Publix</option>
+				<option value="walmart">Walmart</option>
+				<option value="costco">Costco</option>
+			</select>
+			<button id="add-button">Add <i class="fa fa-plus-square"></i></button>
+			<button id="remove-button">Remove <i class="fa fa-minus-square"></i></button>
+			<button>Manage Stores</button>
+		</div>
+	</section>
+	<section class="main-section">
+		<div class="content">
+			<table id="shopping-item-list">
+				<thead>
+					<tr>
+						<th>Action</th>
+						<th>Item Description</th>
+						<th>Quantity</th>
+						<th>Store</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>done</td>
+						<td>Water</td>
+						<td>4</td>
+						<td>Publix</td>
+					</tr>
+					<tr>
+						<td>done</td>
+						<td>Meat</td>
+						<td>1</td>
+						<td>Publix</td>
+					</tr>
+					<tr>
+						<td>done</td>
+						<td>Bread</td>
+						<td>2</td>
+						<td>Costco</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+</body>
+</html>
