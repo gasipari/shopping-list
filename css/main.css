@@ -71,8 +71,12 @@ div, section {
 }
 
 /* main section */
-.main-section table{
-	
+.item-done {
+	background-color: lightgreen;
+}
+
+.item-active {
+
 }
 
 /* Generic Styling for table (Desktops/Laptops) */
