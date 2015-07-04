@@ -31,6 +31,8 @@ $(document).ready(function(){
 		}else {
 			alert("Please enter item/store");
 		}
+		// reset item input
+		$("#shopping-item").val('');
 	});
 
 	// add store item
