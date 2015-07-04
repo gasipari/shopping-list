@@ -19,53 +19,80 @@
 
 	<section class="menu-section">
 		<div class="content">
-			<span>Item</span>
-			<input id="shopping-item" name="shopping-item" type="text"/>
-
-			<span>Quantity</span>
-			<input id="shopping-item-qty" name="shopping-item-qty" type="number" value="1" min="1"/>
-
-			<span>Store</span>
-			<select id="shopping-store">
-				<option value="" disabled selected>select store</option>
-				<option value="publix">Publix</option>
-				<option value="walmart">Walmart</option>
-				<option value="costco">Costco</option>
-			</select>
-			<button id="add-button">Add <i class="fa fa-plus-square"></i></button>
-			<button id="remove-button">Remove <i class="fa fa-minus-square"></i></button>
-			<button>Manage Stores</button>
+				<input id="shopping-item" name="shopping-item" type="text" placeholder="Enter item here" autofocus/>
+				<input id="shopping-item-qty" name="shopping-item-qty" type="number" value="1" min="1"/>
+				<select id="shopping-store">
+					<option value="" disabled="" selected="">select store</option>
+				</select>
+				<button id="add-button">Add <i class="fa fa-plus-square"></i></button>
+			 <button id="manage-stores">Manage Stores</button>
 		</div>
 	</section>
+		<section class="menu-section-store">
+		<div class="content">
+				<input id="store-item" name="store-item" type="text" placeholder="Enter store here" autofocus/>
+				<select id="shopping-store-type">
+					<option value="" disabled="" selected="">select type</option>
+					<option value="Retailer">Retailer</option>
+					<option value="Wholesaler">Wholesaler</option>
+				</select>
+				<button id="add-button-store">Add <i class="fa fa-plus-square"></i></button>
+				<button id="back-to-list">Back to shopping list</button>
+		</div>
+	</section>
+
 	<section class="main-section">
 		<div class="content">
 			<table id="shopping-item-list">
 				<thead>
 					<tr>
-						<th>Action</th>
+						<th>Done</th>
 						<th>Item Description</th>
 						<th>Quantity</th>
 						<th>Store</th>
+						<th></th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<td><i class="fa fa-square-o"></i></td>
-						<td>Water</td>
-						<td>4</td>
-						<td>Publix</td>
-					</tr>
-					<tr>
-						<td><i class="fa fa-check-square-o"></i></td>
-						<td>Meat</td>
+						<td>Water (pack of 24)</td>
 						<td>1</td>
 						<td>Publix</td>
+						<td><i class="fa fa-times"></i></td>
 					</tr>
-					<tr>
+					<tr class="item-done">
 						<td><i class="fa fa-check-square-o"></i></td>
 						<td>Bread</td>
 						<td>2</td>
 						<td>Costco</td>
+						<td><i class="fa fa-times"></i></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+		<section class="main-section-store">
+		<div class="content">
+			<table id="store-item-list">
+				<thead>
+					<tr>
+						<th>Store Name</th>
+						<th>Type</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="store-name">Publix</td>
+						<td>Retailer</td>
+						<td><i class="fa fa-times"></i></td>
+					</tr>
+					<tr>
+						<td class="store-name">Costco</td>
+						<td>Wholesaler</td>
+						<td><i class="fa fa-times"></i></td>
 					</tr>
 				</tbody>
 			</table>

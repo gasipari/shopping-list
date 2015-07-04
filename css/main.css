@@ -54,15 +54,18 @@ div, section {
 }
 
 /* menu section */
-.menu-section div {
+.menu-section div,
+.menu-section-store div{
 	padding-bottom: 1em;
 }
 
-.menu-section > div > span:nth-child(3), 
-.menu-section > div > span:nth-child(5),
-.menu-section > div > button:nth-child(7),
-.menu-section > div > button:nth-child(8),
-.menu-section > div > button:nth-child(9){
+#shopping-item,
+#store-item {
+	width: 30%;
+}
+
+#shopping-item-qty,
+#shopping-store {
 	margin-left: 1em;
 }
 
@@ -77,6 +80,12 @@ div, section {
 
 .item-active {
 
+}
+
+/* store sections  */
+.menu-section-store,
+.main-section-store {
+	display: none;
 }
 
 /* Generic Styling for table (Desktops/Laptops) */
