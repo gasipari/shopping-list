@@ -46,6 +46,8 @@ $(document).ready(function(){
 		}else {
 			alert("Please enter store/type");
 		}
+		// reset store input
+		$("#store-item").val('');
 	});
 
 	// add fake tooltip
