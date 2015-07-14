@@ -30,6 +30,21 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+input {
+	font-size: 100%;
+	font: inherit;
+}
+
+select {
+	font-size: 100%;
+	font: inherit;
+}
+
+button {
+	font-size: 100%;
+	font: inherit;
+}
+
 div, section {
 	/*border: 1px solid red;*/
 }
